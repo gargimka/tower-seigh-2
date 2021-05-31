@@ -8,6 +8,7 @@ const Constraint=Matter.Constraint;
 function preload()
 {
   polygon_img=loadImage("polygon.png");
+  bg=loadImage("bg.jpg");
 }
 
 function setup() {
@@ -77,10 +78,13 @@ function setup() {
     }
     function draw() {
         rectMode(CENTER);
-        background(0);
+        background(bg);
         
-        fill("white");
+        fill(0);
         text("Drag the Hexagonal Stone and Release it, to launch it towards the blocks",100,30);
+
+        fill(0);
+        text("Press Space to play again",100,50);
       
 
 
